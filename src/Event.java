@@ -2,7 +2,7 @@ public class Event {
     private static String name;
     private static String action;
 
-    boolean b;
+    boolean actionValue;
 
 
     Event(){
@@ -19,6 +19,8 @@ public class Event {
         return action;
     }
 
+
+
     public void setName(String name) {
         this.name = name;
     }
@@ -32,13 +34,17 @@ public class Event {
 
     }
 
-//
-//        action.equals("Face2Face") ||
-//                action.equals("PhoneCall") ||
-//                action.equals("TextMessaging") ||
-//                action.equals("Unknown");
+ public static boolean actionValue() {
 
+        if (Event.action.equals("Face2Face") ||
+                Event.action.equals("PhoneCall") ||
+                Event.action.equals("TextMessaging") ||
+                Event.action.equals("Unknown")){
+            return true;
+        }
+        return false;
 
+    }
 
 
 

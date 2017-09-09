@@ -8,7 +8,7 @@ public class EventLog extends Event{
 
     public boolean addEvent(Event event) throws IllegalArgumentException{
 
-            if(event != null && !Event.getName().isEmpty() && !Event.getAction().isEmpty() && !Event.getAction().isEmpty()){
+            if(event != null && !Event.getName().isEmpty() && !Event.getAction().isEmpty() && !Event.getAction().isEmpty() && Event.actionValue()){
                 return true;
             } else{
                 return false;

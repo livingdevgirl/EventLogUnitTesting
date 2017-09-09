@@ -8,6 +8,6 @@ public class Main {
 
         System.out.println(event.getAction());
         System.out.println(event);
-        System.out.println(event.addEvent());
+        System.out.println();
     }
 }
