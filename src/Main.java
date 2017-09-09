@@ -3,10 +3,11 @@ public class Main {
 
                 Event event = new Event();
         event.setName("Hi");
-        event.setAction("Good!");
+        event.setAction("PhoneCall");
         event.addEvent();
+
         System.out.println(event.getAction());
         System.out.println(event);
-        System.out.println();
+        System.out.println(event.addEvent());
     }
 }

@@ -8,7 +8,6 @@ public class Event {
     Event(){
 
 
-
     }
 
 
@@ -17,36 +16,30 @@ public class Event {
     }
 
     public static String getAction() {
-
-        if (action.equals("Face2Face") ||
-                action.equals("PhoneCall") ||
-                action.equals("TextMessaging") ||
-                action.equals("Unknown")){
-
-            return action;
-    }else{
-    return "err";
-    }};
+        return action;
+    }
 
     public void setName(String name) {
         this.name = name;
     }
 
-    public void setAction(String action) {
-        if (this.action.equals("Face2Face") ||
-                this.action.equals("PhoneCall") ||
-                this.action.equals("TextMessaging") ||
-                this.action.equals("Unknown")){
-            this.action = action;
-        }
-       else{
-            this.action.isEmpty();
-        }
-    }
 
+    public static void setAction(String action) {
+        Event.action = action;
+    }
 
     public void addEvent() {
+
     }
+
+//
+//        action.equals("Face2Face") ||
+//                action.equals("PhoneCall") ||
+//                action.equals("TextMessaging") ||
+//                action.equals("Unknown");
+
+
+
 
 
 }
